@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Киберспорта | КиберСтарт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-animation"></div>
+        <div class="container">
+            <h1 class="floating">КиберСтарт</h1>
+            <p>Профессиональное обучение киберспорту от лучших тренеров</p>
+        </div>
+    </header>
+
+    <!-- Навигация с вкладками -->
+    <div class="tabs-container">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab active" data-tab="tab1">О КиберСтарт</button>
+                <button class="tab" data-tab="tab2">Наши тренеры</button>
+                <button class="tab" data-tab="tab3">Курс по Dota 2</button>
+                <button class="tab" data-tab="tab4">Курс по CS2</button>
+                <button class="tab" data-tab="tab5">Курс по Mobile Legends</button>
+                <button class="tab" data-tab="tab6">Новости</button>
+                <button class="tab" data-tab="tab7">Контакты</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Вкладка 1: О КиберСтарт -->
+    <section class="tab-content active" id="tab1">
+        <div class="container">
+            <h2>О нашей организации "КиберСтарт"</h2>
+            <p><span class="highlight">КиберСтарт</span> - это ведущая образовательная платформа в сфере киберспорта, созданная для тех, кто хочет не просто играть, а побеждать на профессиональном уровне. Наша миссия - раскрывать потенциал каждого игрока и помогать достигать высот в киберспортивной карьере.</p>
+            
+            <div class="career-path">
+                <h3>Наша философия:</h3>
+                <ul>
+                    <li><span class="highlight">Индивидуальный подход</span> - каждый ученик уникален, поэтому мы разрабатываем персонализированные программы обучения</li>
+                    <li><span class="highlight">Профессионализм</span> - все наши тренеры имеют подтвержденный опыт выступлений на турнирах</li>
+                    <li><span class="highlight">Практика</span> - 80% обучения составляет практическая игра с анализом и разбором ошибок</li>
+                    <li><span class="highlight">Поддержка</span> - мы сопровождаем наших учеников даже после завершения курса</li>
+                </ul>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">3+</div>
+                    <p>Года успешной работы</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <p>Успешных выпускников</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <p>Довольных учеников</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <p>Учеников в топ-100 рейтинга</p>
+                </div>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Современные методики</h3>
+                    <p>Используем передовые техники обучения, основанные на анализе игр профессионалов</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Гибкий график</h3>
+                    <p>Занятия в удобное для вас время, включая выходные и вечерние часы</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Разные форматы</h3>
+                    <p>Индивидуальные и групповые занятия, мастер-классы, разборы реplays</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Доступность</h3>
+                    <p>Обучение проводится онлайн, что позволяет заниматься из любой точки мира</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вкладка 2: Наши тренеры -->
+    <section class="tab-content" id="tab2">
+        <div class="container">
+            <h2>Наша команда тренеров</h2>
+            <p>В нашей организации работают только проверенные профессионалы с реальным опытом выступлений на турнирах. Каждый тренер - не просто игрок, а наставник, который умеет передавать знания.</p>
+            
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Иван Петров" class="trainer-image">
+                <div class="trainer-name">Иван Петров</div>
+                <div class="trainer-game">Тренер по Dota 2</div>
+                <p>Экс-игрок команды "Virtus.pro", участник The International 2022 и 2023. Специализируется на позициях мидлейнера и керри. Помог более 70 игрокам достичь рейтинга Immortal.</p>
+                <div class="price-tag">1500₽/час</div>
+                <div class="enroll-section">
+                    <button class="go-to-course-button" onclick="goToCourse('tab3')">Перейти к курсу Dota 2</button>
+                </div>
+                <div class="trainer-contact">
+                    <p><span class="highlight">Контакты:</span></p>
+                    <p>Telegram: @ivan_dota2_coach</p>
+                    <p>Discord: IvanPro#3345</p>
+                </div>
+            </div>
+
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Анна Сидорова" class="trainer-image">
+                <div class="trainer-name">Анна Сидорова</div>
+                <div class="trainer-game">Тренер по Counter-Strike 2</div>
+                <p>Бывшая игрок команды "Natus Vincere Female", победительница ESL Impact Katowice 2023. Специализируется на стратегии и тактике, лучший риггер по статистике 2022 года.</p>
+                <div class="price-tag">1500₽/час</div>
+                <div class="enroll-section">
+                    <button class="go-to-course-button" onclick="goToCourse('tab4')">Перейти к курсу CS2</button>
+                </div>
+                <div class="trainer-contact">
+                    <p><span class="highlight">Контакты:</span></p>
+                    <p>Telegram: @anna_cs2_pro</p>
+                    <p>Discord: AnnaCS#6789</p>
+                </div>
+            </div>
+
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Дмитрий Волков" class="trainer-image">
+                <div class="trainer-name">Дмитрий Волков</div>
+                <div class="trainer-game">Тренер по Mobile Legends</div>
+                <p>Чемпион MPL CIS Season 7, MVP регулярного сезона. Эксперт по микроуправлению и макроигре. Разработал авторскую методику обучения для мобильных MOBA.</p>
+                <div class="price-tag">800₽/час</div>
+                <div class="enroll-section">
+                    <button class="go-to-course-button" onclick="goToCourse('tab5')">Перейти к курсу Mobile Legends</button>
+                </div>
+                <div class="trainer-contact">
+                    <p><span class="highlight">Контакты:</span></p>
+                    <p>Telegram: @dmitry_ml_coach</p>
+                    <p>Discord: DmitryML#1123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вкладка 3: Курс по Dota 2 -->
+    <section class="tab-content" id="tab3">
+        <div class="container">
+            <h2>Профессиональный курс по Dota 2</h2>
+            
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Иван Петров" class="trainer-image">
+                <div class="trainer-name">Иван Петров</div>
+                <div class="trainer-game">Ваш тренер по Dota 2</div>
+                <p>Стаж в Dota 2: 9 лет | Профессиональный опыт: 5 лет | Тренерский опыт: 3 года</p>
+                <div class="price-tag">1500₽/час</div>
+                <div class="enroll-section">
+                    <button class="enroll-button" onclick="enrollToCourse('Dota 2', 'Иван Петров')">Записаться на курс</button>
+                </div>
+            </div>
+
+            <div class="course-details">
+                <h3>О курсе:</h3>
+                <p>Комплексная программа обучения Dota 2, разработанная для игроков любого уровня. От основ до продвинутых стратегий.</p>
+                
+                <div class="course-features">
+                    <div class="feature">
+                        <h4>Длительность</h4>
+                        <p>1 час + индивидуальный разбор</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Формат</h4>
+                        <p>Онлайн, индивидуально</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Уровень</h4>
+                        <p>От Herald до Immortal</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Материалы</h4>
+                        <p>Записи игр, гайды, чек-листы</p>
+                    </div>
+                </div>
+
+                <h3>Что входит в занятие:</h3>
+                <ul>
+                    <li><span class="highlight">Анализ реplays</span> - разбор ваших игр и профессиональных матчей</li>
+                    <li><span class="highlight">Теория меты</span> - актуальные сборки и стратегии</li>
+                    <li><span class="highlight">Микро и макро игра</span> - позиционирование, тайминг, ротации</li>
+                    <li><span class="highlight">Психология игры</span> - тильт-менеджмент, командное взаимодействие</li>
+                    <li><span class="highlight">Домашние задания</span> - практические задачи для закрепления</li>
+                </ul>
+
+                <h3>Для кого этот курс:</h3>
+                <ul>
+                    <li>Новички, которые хотят быстро освоить основы</li>
+                    <li>Игроки среднего уровня, застрявшие в MMR</li>
+                    <li>Опытные игроки, стремящиеся к профессиональному уровню</li>
+                    <li>Команды, желающие улучшить координацию и стратегию</li>
+                </ul>
+
+                <div class="payment-info">
+                    <h3>Как оплатить курс:</h3>
+                    <p>После нажатия кнопки "Записаться на курс" вы будете перенаправлены на страницу оплаты</p>
+                    <div class="payment-methods">
+                        <span class="payment-method">Банковская карта</span>
+                        <span class="payment-method">ЮMoney</span>
+                        <span class="payment-method">QIWI</span>
+                        <span class="payment-method">Crypto</span>
+                    </div>
+                </div>
+
+                <div class="trainer-contact">
+                    <h3>Контакты тренера:</h3>
+                    <p><span class="highlight">Telegram:</span> @ivan_dota2_coach</p>
+                    <p><span class="highlight">Discord:</span> IvanPro#3345</p>
+                    <p><span class="highlight">Время работы:</span> 15:00-23:00 (МСК)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вкладка 4: Курс по CS2 -->
+    <section class="tab-content" id="tab4">
+        <div class="container">
+            <h2>Профессиональный курс по Counter-Strike 2</h2>
+            
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Анна Сидорова" class="trainer-image">
+                <div class="trainer-name">Анна Сидорова</div>
+                <div class="trainer-game">Ваш тренер по CS2</div>
+                <p>Стаж в CS: 7 лет | Профессиональный опыт: 4 года | Тренерский опыт: 2 года</p>
+                <div class="price-tag">1500₽/час</div>
+                <div class="enroll-section">
+                    <button class="enroll-button" onclick="enrollToCourse('Counter-Strike 2', 'Анна Сидорова')">Записаться на курс</button>
+                </div>
+            </div>
+
+            <div class="course-details">
+                <h3>О курсе:</h3>
+                <p>Интенсивный курс по CS2, направленный на развитие всех аспектов игры: от прицеливания до тактического мышления.</p>
+                
+                <div class="course-features">
+                    <div class="feature">
+                        <h4>Длительность</h4>
+                        <p>1 час + тренировочные режимы</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Формат</h4>
+                        <p>Онлайн, индивидуально/в группе</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Уровень</h4>
+                        <p>От Silver до Global Elite</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Материалы</h4>
+                        <p>Конфиги, тренировочные карты, демо-файлы</p>
+                    </div>
+                </div>
+
+                <h3>Что входит в занятие:</h3>
+                <ul>
+                    <li><span class="highlight">Тренировка прицела</span> - разработка индивидуальной сенсы, тренировочные карты</li>
+                    <li><span class="highlight">Гренадерство</span> - изучение всех смоук, флешек, молотов на актуальных картах</li>
+                    <li><span class="highlight">Позиционирование</span> - выбор позиций, angles, peeking techniques</li>
+                    <li><span class="highlight">Экономика</span> - правильное управление экономикой команды</li>
+                    <li><span class="highlight">Командная игра</span> - коммуникация, роли, стратегии</li>
+                </ul>
+
+                <h3>Для кого этот курс:</h3>
+                <ul>
+                    <li>Игроки, желающие улучшить свою механику</li>
+                    <li>Те, кто хочет понять тактическую составляющую CS2</li>
+                    <li>Команды, нуждающиеся в стратегическом развитии</li>
+                    <li>AWP-еры, желающие стать более стабильными</li>
+                </ul>
+
+                <div class="payment-info">
+                    <h3>Как оплатить курс:</h3>
+                    <p>После нажатия кнопки "Записаться на курс" вы будете перенаправлены на страницу оплаты</p>
+                    <div class="payment-methods">
+                        <span class="payment-method">Банковская карта</span>
+                        <span class="payment-method">ЮMoney</span>
+                        <span class="payment-method">QIWI</span>
+                        <span class="payment-method">Crypto</span>
+                    </div>
+                </div>
+
+                <div class="trainer-contact">
+                    <h3>Контакты тренера:</h3>
+                    <p><span class="highlight">Telegram:</span> @anna_cs2_pro</p>
+                    <p><span class="highlight">Discord:</span> AnnaCS#6789</p>
+                    <p><span class="highlight">Время работы:</span> 17:00-01:00 (МСК)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вкладка 5: Курс по Mobile Legends -->
+    <section class="tab-content" id="tab5">
+        <div class="container">
+            <h2>Профессиональный курс по Mobile Legends</h2>
+            
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Дмитрий Волков" class="trainer-image">
+                <div class="trainer-name">Дмитрий Волков</div>
+                <div class="trainer-game">Ваш тренер по Mobile Legends</div>
+                <p>Стаж в ML: 6 лет | Профессиональный опыт: 4 года | Тренерский опыт: 3 года</p>
+                <div class="price-tag">800₽/час</div>
+                <div class="enroll-section">
+                    <button class="enroll-button" onclick="enrollToCourse('Mobile Legends', 'Дмитрий Волков')">Записаться на курс</button>
+                </div>
+            </div>
+
+            <div class="course-details">
+                <h3>О курсе:</h3>
+                <p>Экспресс-курс по Mobile Legends, сфокусированный на быстром прогрессе в рейтинговых играх.</p>
+                
+                <div class="course-features">
+                    <div class="feature">
+                        <h4>Длительность</h4>
+                        <p>1 час + live-коучинг</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Формат</h4>
+                        <p>Онлайн, через Discord</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Уровень</h4>
+                        <p>От Warrior до Mythical Glory</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Материалы</h4>
+                        <p>Билды, ротации, replay analysis</p>
+                    </div>
+                </div>
+
+                <h3>Что входит в занятие:</h3>
+                <ul>
+                    <li><span class="highlight">Мета-анализ</span> - актуальные тир-листы, контраньеры</li>
+                    <li><span class="highlight">Микроуправление</span> - контроль героя, комбо, позиционирование в тимфайтах</li>
+                    <li><span class="highlight">Макроигра</span> - тайминги объектов, ротации, контроль карты</li>
+                    <li><span class="highlight">Выбор героя</span> - подбор пула героев под ваш стиль игры</li>
+                    <li><span class="highlight">Психология</span> - работа с тильтом, мотивация, goal-setting</li>
+                </ul>
+
+                <h3>Для кого этот курс:</h3>
+                <ul>
+                    <li>Новички, желающие быстро освоить игру</li>
+                    <li>Игроки, желающие стать лучше</li>
+                    <li>Те, кто хочет играть на позиции лес/роум</li>
+                    <li>Игроки, стремящиеся стать киберспортсменом и не только</li>
+                </ul>
+
+                <div class="payment-info">
+                    <h3>Как оплатить курс:</h3>
+                    <p>После нажатия кнопки "Записаться на курс" вы будете перенаправлены на страницу оплаты</p>
+                    <div class="payment-methods">
+                        <span class="payment-method">Банковская карта</span>
+                        <span class="payment-method">ЮMoney</span>
+                        <span class="payment-method">QIWI</span>
+                        <span class="payment-method">Crypto</span>
+                    </div>
+                </div>
+
+                <div class="trainer-contact">
+                    <h3>Контакты тренера:</h3>
+                    <p><span class="highlight">Telegram:</span> @dmitry_ml_coach</p>
+                    <p><span class="highlight">Discord:</span> DmitryML#1123</p>
+                    <p><span class="highlight">Время работы:</span> 13:00-21:00 (МСК)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вкладка 6: Новости -->
+    <section class="tab-content" id="tab6">
+        <div class="container">
+            <h2>Новости киберспорта</h2>
+            
+            <div class="news-item">
+                <div class="news-title">Esports World Cup 2025</div>
+                <p>Турнир пройдёт в июле-августе в Эр-Рияде, Саудовская Аравия. В список дисциплин войдут шахматы и CrossFire. Ожидается, что участие в чемпионате примут около 200 клубов и 2000 игроков из более чем 100 стран.</p>
+                <img src="https://cdn.forbes.ru/forbes-static/shareimages/502768.jpg?v=1702974803" alt="Esports World Cup 2025" class="news-image">
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">The International 2025</div>
+                <p>Турнир по Dota 2 планируют провести с 4 по 14 сентября в Гамбурге, Германия. Ожидается участие 16 составов-участников, среди которых Team Spirit, Parivision, BetBoom Team, Aurora Gaming и Natus Vincere.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">FNCS 2025 Global Championship</div>
+                <p>Крупнейший турнир по Fortnite, который пройдёт 6–7 сентября в Лионе, Франция. Впервые в условиях участия команды будут сформированы не в привычном формате дуэта, а в форме трио.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">DreamHack Stockholm 2025</div>
+                <p>Турниры по дисциплинам Overwatch 2, The Finals, Counter-Strike 2 запланированы на 28–30 ноября в Стокгольме, Швеция. В рамках фестиваля пройдёт мировой финал нынещнего сезона Overwatch Champions Series.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">IEM Chengdu 2025</div>
+                <p>С 3 по 9 ноября турнир проходит в Чэнду, Китай. Коллективы разыгрывают призовой фонд в размере $300 тыс.. 4 ноября сообщалось, что Team Falcons обыграла Team Spirit и заработала слот в плей-офф IEM Chengdu 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вкладка 7: Контакты -->
+    <section class="tab-content" id="tab7">
+        <div class="container">
+            <h2>Контакты основателя</h2>
+            
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Дмитрий Волков" class="trainer-image">
+                <div class="trainer-name">Василий Арасланов</div>
+                <div class="trainer-game">Основатель КиберСтарт</div>
+                <p>Профессиональный игрок и тренер по Mobile Legends. Создал КиберСтарт с целью сделать качественное киберспортивное образование доступным для всех.</p>
+                
+                <div class="trainer-contact">
+                    <h3>Контактная информация:</h3>
+                    <p><span class="highlight">Электронная почта:</span> vasilijaraslanov5@gmail.com</p>
+                    <p><span class="highlight">Телефон:</span> +7 (495) 123-45-67</p>
+                    <p><span class="highlight">Город:</span> Москва, Россия</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://t.me/Pe4enkaShoy" target="_blank" class="social-icon telegram">TG</a>
+                        <a href="https://vk.com/id592232581" target="_blank" class="social-icon vk">VK</a>
+                        <a href="https://discord.com/channels/Slenntor#5222" target="_blank" class="social-icon discord">DC</a>
+                        <a href="mailto:vasilijaraslanov5@gmail.com" class="social-icon email">@</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h3>Обратная связь</h3>
+                <p>Если у вас есть вопросы по поводу сотрудничества, обучения или просто хотите узнать больше о наших курсах - свяжитесь с нами любым удобным способом:</p>
+                
+                <p><span class="highlight">Общий email:</span> info@cyberstart.pro</p>
+                <p><span class="highlight">Discord сервер:</span> discord.gg/cyberstart</p>
+                <p><span class="highlight">Telegram канал:</span> @cyberstart_news</p>
+                <p><span class="highlight">Время работы поддержки:</span> 10:00-22:00 (МСК)</p>
+            </div>
+
+            <div class="career-path">
+                <h3>Стань частью КиберСтарт!</h3>
+                <p>Мы всегда открыты для талантливых тренеров и партнеров. Если вы профессионал в своем деле и хотите делиться знаниями - напишите нам!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 КиберСтарт. Все права защищены.</p>
+                <div class="update-info">
+                    Сайт обновляется каждый месяц<br>
+                    Дата создания сайта: <span id="creation-date"></span><br>
+                    Последнее обновление: <span id="update-date"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
